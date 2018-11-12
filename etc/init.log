@@ -1,0 +1,7 @@
+说明：如上2图所示，在Program arguments中添加参数：
+--property-file etc/init-mongo.properties
+在VM arguments中添加参数：
+-Dfile.encoding=UTF-8 -Dsun.jnu.encoding=UTF-8
+-Djdbc.drivers=com.mysql.jdbc.Driver:org.postgresql.Driver:org.apache.derby.jdbc.EmbeddedDriver
+-server -Xms100M -Xmx200M -XX:PermSize=32m -XX:MaxPermSize=256m -XX:MaxDirectMemorySize=128m
+-Djava.ext.dirs=D:\Workspace\git\net_tigase-server\jars
